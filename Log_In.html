@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login</title>
+	<link rel="icon" href="IMG/favicon.ico" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="CSS/Log_In.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+</head>
+<body>
+	<center>
+	<div class="div">
+		<form>
+		<p class="login">Login</p>
+		<p class="p">Username</p>
+		<input type="text" name="Username" placeholder="Type your username" class="input_box" oninvalid="InvalidMsg(this);" oninput="InvalidMsg(this);" required="">
+
+		<br>
+		<br>
+		<p class="p">Password</p>
+		<input type="Password" name="Password" placeholder="Type your password" class="input_box" class="input_box" oninvalid="Invalidsg(this);" oninput="Invalidsg(this);" required="">
+		<br>
+		<br>
+		<button class="btn-hover color-3" type="submit"><a href="Main_page.html">Login</a></button>
+	</form>
+	<p class="signup">Or Sign Up Using</p>
+<ul>
+  <li>
+    <a href="#">
+      <i class="fab fa-facebook-f icon"></i>    </a>
+  </li>
+  <li>
+    <a href="#"><i class="fab fa-twitter icon"></i></a>
+  </li>
+  <li>
+    <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+</ul>
+	</div>
+</center>
+    <script>
+        function InvalidMsg(textbox) {
+  
+            if (textbox.value === '') {
+                textbox.setCustomValidity
+                      ('Please enter username here');
+            }
+           else {
+                textbox.setCustomValidity('');
+            }
+  
+            return true;
+        }
+        function Invalidsg(txtbox) {
+  
+            if (txtbox.value === '') {
+                txtbox.setCustomValidity
+                      ('Please enter valid password here');
+            }
+           else {
+                txtbox.setCustomValidity('');
+            }
+  
+            return true;
+        }
+    </script>
+</body>
+</html>
